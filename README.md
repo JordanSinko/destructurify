@@ -32,8 +32,10 @@ fn('Hello World!').then(({ error }) => console.log(error.message)); // -> This i
 
 // Works with async/await:
 const resolveFn = arg => new Promise(res => setTimeout(res, 0, arg));
+const fn = destructurify(resolveFn);
+
 (async () => {
-  const { error, response } = await resolveFn('Hello World!');
+  const { error, response } = await fn('Hello World!');
   if (error != null) throw error;
   console.log(response); // -> Hello World!
 })();
