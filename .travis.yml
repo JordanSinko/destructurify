@@ -10,5 +10,5 @@ node_js:
   - '6'
 script:
   - yarn test
-after_script:
+after_success:
   - sonar-scanner
