@@ -2,7 +2,7 @@ sudo: required
 dist: trusty
 addons:
   sonarcloud:
-    organization: 'com.jordansinko.destructurify'
+    organization: 'jordansinko-github'
 language: node_js
 node_js:
   - '10'
