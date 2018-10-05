@@ -15,9 +15,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "run-s test:format",
+    "test": "run-s test:format test:unit",
     "test:format": "prettier-check --single-quote index.js __tests__/index.spec.js",
-    "test:unit": "nyc --reporter=lcov tape __tests__/index.spec.js "
+    "test:unit": "tape __tests__/index.spec.js",
+    "cover": "run-s cover:unit",
+    "cover:unit": "nyc --reporter=lcov tape __tests__/index.spec.js"
   },
   "homepage": "https://github.com/JordanSinko/destructurify#readme",
   "bugs": "https://github.com/JordanSinko/destructurify/issues",
