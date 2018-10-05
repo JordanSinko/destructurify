@@ -1,0 +1,29 @@
+{
+  "name": "destructurify",
+  "description": "Make a promise-based function return a destructurifiable object.",
+  "keywords": [
+    "promise",
+    "native",
+    "destructure"
+  ],
+  "author": "Jordan Sinko <jordan5sinko@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanSinko/destructurify.git"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node __tests__/*.test.js"
+  },
+  "homepage": "https://github.com/JordanSinko/destructurify#readme",
+  "bugs": "https://github.com/JordanSinko/destructurify/issues",
+  "devDependencies": {
+    "@types/tape": "^4.2.32",
+    "tape": "^4.9.1"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  }
+}
