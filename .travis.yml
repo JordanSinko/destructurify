@@ -8,7 +8,10 @@ node_js:
   - '10'
   - '8'
   - '6'
-script:
-  - yarn test
-after_success:
-  - sonar-scanner
+script: yarn test
+
+jobs:
+  include:
+    - stage: analyze
+      node_js: '10'
+      script: sonar-scanner
