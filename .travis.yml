@@ -8,6 +8,7 @@ node_js:
   - '10'
   - '8'
   - '6'
-  - '4'
 script:
+  - yarn test
+after_script:
   - sonar-scanner
