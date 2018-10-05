@@ -1,5 +1,10 @@
 # destructurify
 
+[![Travis branch](https://img.shields.io/travis/JordanSinko/destructurify/master.svg)](https://travis-ci.org/JordanSinko/destructurify)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=com.jordansinko.destructure&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.jordansinko.destructure)
+![npm](https://img.shields.io/npm/dm/destructurify.svg)
+![npm](https://img.shields.io/npm/l/destructurify.svg)
+
 Make a promise-based function return a destructurifiable object.
 
 Uses the native promise implementation.
